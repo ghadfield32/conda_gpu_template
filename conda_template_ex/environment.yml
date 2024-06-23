@@ -1,0 +1,14 @@
+name: breast-cancer-pred
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyter
+  - streamlit
+  - pytest
