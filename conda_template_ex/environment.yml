@@ -1,9 +1,9 @@
-name: breast-cancer-pred
-channels:
+name: ml_basics_env
+channels: #where conda will look for packages
   - defaults
   - conda-forge
-dependencies:
-  - python=3.8
+dependencies: #conda packages
+  - python=3.11
   - pandas
   - numpy
   - scikit-learn
@@ -12,3 +12,8 @@ dependencies:
   - jupyter
   - streamlit
   - pytest
+  - pip
+  - pip: #non conda packages installed below
+      - supervision
+      - roboflow
+      - ultralytics
